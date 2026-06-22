@@ -1,116 +1,140 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Rahul ❤️ Megha</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-body{
-    margin:0;
-    font-family:Georgia,serif;
-    background:#FFF8E7;
-    text-align:center;
-    color:#4A3F35;
-}
+<link rel="stylesheet" href="style.css">
 
-.hero{
-    padding:50px 20px;
-}
-
-h1{
-    color:#A67C00;
-    font-size:48px;
-}
-
-.countdown{
-    font-size:30px;
-    color:#A67C00;
-    margin:20px;
-}
-
-.section{
-    padding:40px 20px;
-}
-
-.button{
-    background:#C9A227;
-    color:white;
-    padding:15px 25px;
-    border-radius:10px;
-    text-decoration:none;
-    display:inline-block;
-    margin:10px;
-}
-</style>
 </head>
-
 <body>
 
-<div class="hero">
+<section class="hero">
 
-<h1>Rahul J B ❤️ Megha Madhu</h1>
+<div class="overlay">
 
-<h2>We're Getting Married</h2>
+<p class="invite-text">Together With Their Families</p>
 
-<div class="countdown" id="countdown"></div>
+<h1>Rahul J B</h1>
+
+<div class="heart">❤️</div>
+
+<h1>Megha Madhu</h1>
+
+<p class="wedding-date">
+24 January 2027
+</p>
+
+<div id="countdown"></div>
+
+<a href="#details" class="btn">
+View Invitation
+</a>
 
 </div>
 
-<div class="section">
+</section>
+
+<section id="details" class="section">
 
 <h2>Wedding Ceremony</h2>
 
-<p><b>Date:</b> 24 January 2027</p>
+<div class="card">
 
-<p><b>Time:</b> 12:10 PM - 12:30 PM</p>
+<p>📅 24 January 2027</p>
 
-<p><b>Venue:</b> GDM Auditorium, Kayamkulam</p>
+<p>⏰ 12:10 PM – 12:30 PM</p>
 
-<a class="button"
-href="https://maps.app.goo.gl/nM5N1255P1FjYsk48"
-target="_blank">
-View Location
+<p>📍 GDM Auditorium, Kayamkulam</p>
+
+<a
+class="btn"
+target="_blank"
+href="https://maps.app.goo.gl/nM5N1255P1FjYsk48">
+Get Directions
 </a>
 
 </div>
 
-<div class="section">
+</section>
+
+<section class="section">
 
 <h2>Reception</h2>
 
-<p>26 January 2027</p>
+<div class="card">
 
-<p>4:30 PM - 8:30 PM</p>
+<p>📅 26 January 2027</p>
+
+<p>⏰ 4:30 PM – 8:30 PM</p>
 
 </div>
 
-<div class="section">
+</section>
 
-<a class="button"
+<section class="section">
+
+<h2>Our Journey</h2>
+
+<div class="timeline">
+
+<div class="timeline-card">
+💍 Engagement
+</div>
+
+<div class="timeline-card">
+💒 Wedding
+</div>
+
+<div class="timeline-card">
+❤️ Forever
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="images/couple.jpg">
+
+<img src="images/rahul.jpg">
+
+<img src="images/megha.jpg">
+
+<img src="images/ring.jpg">
+
+</div>
+
+</section>
+
+<a
+class="floating-btn"
 href="https://wa.me/917907171880">
-RSVP on WhatsApp
+
+RSVP
+
 </a>
 
-</div>
+<footer>
 
-<script>
+<h3>Rahul J B ❤️ Megha Madhu</h3>
 
-var weddingDate = new Date("Jan 24, 2027 12:10:00").getTime();
+<p>
+We look forward to celebrating this
+special day with you.
+</p>
 
-setInterval(function(){
+</footer>
 
-var now = new Date().getTime();
-
-var distance = weddingDate - now;
-
-var days = Math.floor(distance/(1000*60*60*24));
-
-document.getElementById("countdown").innerHTML =
-days + " Days To Go";
-
-},1000);
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
