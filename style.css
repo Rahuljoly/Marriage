@@ -74,10 +74,12 @@ margin-top:25px;
 }
 
 .time-box{
-background:rgba(255,255,255,.15);
-padding:20px;
-border-radius:15px;
-min-width:100px;
+background:rgba(201,162,39,.20);
+border:1px solid rgba(201,162,39,.40);
+backdrop-filter:blur(6px);
+padding:25px;
+border-radius:20px;
+min-width:120px;
 }
 
 .time-box span{
