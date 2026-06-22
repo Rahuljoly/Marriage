@@ -188,18 +188,42 @@ text-align:center;
 @media(max-width:768px){
 
 h1{
-font-size:42px;
+font-size:32px;
+}
+
+.wedding-date{
+font-size:18px;
+}
+
+.invite-text{
+font-size:14px;
+letter-spacing:2px;
+}
+
+#countdown{
+gap:10px;
+}
+
+.time-box{
+min-width:120px;
+padding:18px;
+}
+
+.time-box span{
+font-size:24px;
+}
+
+.btn{
+padding:12px 28px;
+font-size:16px;
 }
 
 .overlay{
-padding:30px;
+padding:20px;
 }
 
-.section h2{
-font-size:36px;
+.hero{
+padding:10px;
 }
 
-.card{
-padding:25px;
-}
 }
