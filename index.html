@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rahul ❤️ Megha</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+    margin:0;
+    font-family:Georgia,serif;
+    background:#FFF8E7;
+    text-align:center;
+    color:#4A3F35;
+}
+
+.hero{
+    padding:50px 20px;
+}
+
+h1{
+    color:#A67C00;
+    font-size:48px;
+}
+
+.countdown{
+    font-size:30px;
+    color:#A67C00;
+    margin:20px;
+}
+
+.section{
+    padding:40px 20px;
+}
+
+.button{
+    background:#C9A227;
+    color:white;
+    padding:15px 25px;
+    border-radius:10px;
+    text-decoration:none;
+    display:inline-block;
+    margin:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>Rahul J B ❤️ Megha Madhu</h1>
+
+<h2>We're Getting Married</h2>
+
+<div class="countdown" id="countdown"></div>
+
+</div>
+
+<div class="section">
+
+<h2>Wedding Ceremony</h2>
+
+<p><b>Date:</b> 24 January 2027</p>
+
+<p><b>Time:</b> 12:10 PM - 12:30 PM</p>
+
+<p><b>Venue:</b> GDM Auditorium, Kayamkulam</p>
+
+<a class="button"
+href="https://maps.app.goo.gl/nM5N1255P1FjYsk48"
+target="_blank">
+View Location
+</a>
+
+</div>
+
+<div class="section">
+
+<h2>Reception</h2>
+
+<p>26 January 2027</p>
+
+<p>4:30 PM - 8:30 PM</p>
+
+</div>
+
+<div class="section">
+
+<a class="button"
+href="https://wa.me/917907171880">
+RSVP on WhatsApp
+</a>
+
+</div>
+
+<script>
+
+var weddingDate = new Date("Jan 24, 2027 12:10:00").getTime();
+
+setInterval(function(){
+
+var now = new Date().getTime();
+
+var distance = weddingDate - now;
+
+var days = Math.floor(distance/(1000*60*60*24));
+
+document.getElementById("countdown").innerHTML =
+days + " Days To Go";
+
+},1000);
+
+</script>
+
+</body>
+</html>
